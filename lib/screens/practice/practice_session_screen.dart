@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../models/question.dart';
-import '../../providers/question_providers.dart';
 import '../../providers/session_providers.dart';
-import '../../providers/auth_providers.dart';
 import '../../services/session_service.dart';
-import '../../services/question_service.dart';
+import '../../utils/list_utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -43,16 +41,39 @@ class _PracticeSessionScreenState extends ConsumerState<PracticeSessionScreen> {
       });
       return;
     }
-    final List refs = data['questionIds'] as List;
+    final List refs = data['questionIds'] as List? ?? [];
     final questionIds = refs.map((ref) => (ref as DocumentReference).id).toList();
-    // Query questions
-    final questionsQuery = FirebaseFirestore.instance
-        .collection('questions')
-        .where(FieldPath.documentId, whereIn: questionIds)
-        .get();
-    final snapshot = await questionsQuery;
-    final questions = snapshot.docs
-        .map((doc) => Question.fromMap(doc.id, doc.data()))
+
+    if (questionIds.isEmpty) {
+      setState(() {
+        _questions = const [];
+        _isLoading = false;
+      });
+      return;
+    }
+
+    final questionCollection = FirebaseFirestore.instance.collection('questions');
+    final chunks = chunkList(questionIds, size: 10);
+    final snapshots = await Future.wait(
+      chunks.map((chunk) {
+        return questionCollection
+            .where(FieldPath.documentId, whereIn: chunk)
+            .get();
+      }),
+    );
+
+    final questionMap = <String, Question>{};
+    for (final snapshot in snapshots) {
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
+        if (data == null) continue;
+        questionMap[doc.id] = Question.fromMap(doc.id, data);
+      }
+    }
+
+    final questions = questionIds
+        .map((id) => questionMap[id])
+        .whereType<Question>()
         .toList();
     setState(() {
       _questions = questions;

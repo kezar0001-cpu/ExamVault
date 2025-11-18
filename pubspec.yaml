@@ -1,0 +1,40 @@
+name: flutter_atpl_app
+description: >
+  An ATPL exam preparation app built with Flutter and Firebase.  This project
+  provides a single codebase for iOS, Android and web using Riverpod for
+  state management and go_router for navigation.
+
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^2.3.6
+  hooks_riverpod: ^2.3.6
+  flutter_hooks: ^0.20.3
+  go_router: ^7.1.1
+  firebase_core: ^2.14.0
+  firebase_auth: ^4.6.1
+  cloud_firestore: ^4.8.3
+  firebase_storage: ^11.2.3
+  cached_network_image: ^3.2.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

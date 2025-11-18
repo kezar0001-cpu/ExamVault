@@ -33,13 +33,13 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: String.fromEnvironment('FIREBASE_WEB_API_KEY', defaultValue: 'demo-web-api-key'),
-    appId: String.fromEnvironment('FIREBASE_WEB_APP_ID', defaultValue: '1:000000000000:web:demo'),
-    messagingSenderId: String.fromEnvironment('FIREBASE_WEB_MESSAGING_SENDER_ID', defaultValue: '000000000000'),
-    projectId: String.fromEnvironment('FIREBASE_WEB_PROJECT_ID', defaultValue: 'demo-project'),
-    authDomain: String.fromEnvironment('FIREBASE_WEB_AUTH_DOMAIN', defaultValue: 'demo-project.firebaseapp.com'),
-    storageBucket: String.fromEnvironment('FIREBASE_WEB_STORAGE_BUCKET', defaultValue: 'demo-project.appspot.com'),
-    measurementId: String.fromEnvironment('FIREBASE_WEB_MEASUREMENT_ID', defaultValue: 'G-DEMO12345'),
+   apiKey: "AIzaSyBS3AO-zvCni9_jUYFzRntyz-ySz3BDoxw",
+  authDomain: "examvault-80a74.firebaseapp.com",
+  projectId: "examvault-80a74",
+  storageBucket: "examvault-80a74.firebasestorage.app",
+  messagingSenderId: "995195258388",
+  appId: "1:995195258388:web:fda90a8e4823a4854e8901",
+  measurementId: "G-3XBHKVBDQ9"
   );
 
   static const FirebaseOptions android = FirebaseOptions(

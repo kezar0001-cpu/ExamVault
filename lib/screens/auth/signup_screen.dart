@@ -218,6 +218,7 @@ class SignUpScreen extends HookConsumerWidget {
                                   emailController,
                                   passwordController,
                                   isLoading,
+                                  formKey,
                                 );
                               }
                             },
@@ -237,6 +238,7 @@ class SignUpScreen extends HookConsumerWidget {
                                         emailController,
                                         passwordController,
                                         isLoading,
+                                        formKey,
                                       ),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: AppTheme.primaryBlue,
@@ -311,6 +313,7 @@ class SignUpScreen extends HookConsumerWidget {
     TextEditingController emailController,
     TextEditingController passwordController,
     ValueNotifier<bool> isLoading,
+    GlobalKey<FormState> formKey,
   ) async {
     if (!(formKey.currentState?.validate() ?? false)) {
       return;

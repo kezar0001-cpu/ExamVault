@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../models/user_progress.dart';
 import '../../models/subject.dart';
+import '../../models/topic.dart';
 import '../../providers/progress_providers.dart';
 import '../../providers/question_providers.dart';
 import '../../theme/app_theme.dart';
@@ -427,10 +428,12 @@ class _ProgressScreenState extends ConsumerState<ProgressScreen> {
     // Fetch topic details
     return ref.watch(topicsProvider(topicProgress.topicId.split('_').first)).when(
       data: (topics) {
-        final topic = topics.firstWhere(
-          (t) => t.id == topicId,
-          orElse: () => null,
-        );
+        Topic? topic;
+        try {
+          topic = topics.firstWhere((t) => t.id == topicId);
+        } catch (e) {
+          topic = null;
+        }
         final topicName = topic?.name ?? 'Topic $topicId';
 
         return Padding(

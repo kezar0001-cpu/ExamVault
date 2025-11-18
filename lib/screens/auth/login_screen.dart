@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../providers/auth_providers.dart';
 import '../../theme/app_theme.dart';
 
@@ -147,7 +148,7 @@ class LoginScreen extends HookConsumerWidget {
                             },
                             onFieldSubmitted: (_) {
                               if (formKey.currentState?.validate() ?? false) {
-                                _performLogin(context, ref, emailController, passwordController, isLoading);
+                                _performLogin(context, ref, emailController, passwordController, isLoading, formKey);
                               }
                             },
                           ),
@@ -159,7 +160,7 @@ class LoginScreen extends HookConsumerWidget {
                             child: ElevatedButton(
                               onPressed: isLoading.value
                                   ? null
-                                  : () => _performLogin(context, ref, emailController, passwordController, isLoading),
+                                  : () => _performLogin(context, ref, emailController, passwordController, isLoading, formKey),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: AppTheme.primaryBlue,
                                 foregroundColor: AppTheme.surfaceWhite,
@@ -231,6 +232,7 @@ class LoginScreen extends HookConsumerWidget {
     TextEditingController emailController,
     TextEditingController passwordController,
     ValueNotifier<bool> isLoading,
+    GlobalKey<FormState> formKey,
   ) async {
     if (!(formKey.currentState?.validate() ?? false)) {
       return;

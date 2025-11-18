@@ -1,0 +1,393 @@
+{
+  "subjects": [
+    {
+      "id": "air-law",
+      "name": "Air Law",
+      "description": "Aviation regulations, ICAO annexes, and international law"
+    },
+    {
+      "id": "aircraft-general-knowledge",
+      "name": "Aircraft General Knowledge",
+      "description": "Aircraft systems, engines, and structures"
+    },
+    {
+      "id": "meteorology",
+      "name": "Meteorology",
+      "description": "Weather phenomena, forecasting, and climatology"
+    },
+    {
+      "id": "flight-performance-planning",
+      "name": "Flight Performance and Planning",
+      "description": "Aircraft performance, weight and balance, flight planning"
+    },
+    {
+      "id": "human-performance",
+      "name": "Human Performance and Limitations",
+      "description": "Aviation physiology, psychology, and crew resource management"
+    }
+  ],
+  "topics": [
+    {
+      "id": "icao-annexes",
+      "subjectId": "air-law",
+      "name": "ICAO Annexes",
+      "description": "International Civil Aviation Organization standards"
+    },
+    {
+      "id": "rules-of-the-air",
+      "subjectId": "air-law",
+      "name": "Rules of the Air",
+      "description": "Visual flight rules and instrument flight rules"
+    },
+    {
+      "id": "aircraft-licensing",
+      "subjectId": "air-law",
+      "name": "Aircraft Licensing and Registration",
+      "description": "Requirements for aircraft certification"
+    },
+    {
+      "id": "powerplant",
+      "subjectId": "aircraft-general-knowledge",
+      "name": "Powerplant",
+      "description": "Piston and turbine engines"
+    },
+    {
+      "id": "airframe-systems",
+      "subjectId": "aircraft-general-knowledge",
+      "name": "Airframe and Systems",
+      "description": "Aircraft structure, hydraulics, pneumatics"
+    },
+    {
+      "id": "atmospheric-physics",
+      "subjectId": "meteorology",
+      "name": "Atmospheric Physics",
+      "description": "Temperature, pressure, density, and humidity"
+    },
+    {
+      "id": "weather-phenomena",
+      "subjectId": "meteorology",
+      "name": "Weather Phenomena",
+      "description": "Clouds, precipitation, and severe weather"
+    },
+    {
+      "id": "mass-and-balance",
+      "subjectId": "flight-performance-planning",
+      "name": "Mass and Balance",
+      "description": "Weight calculations and CG limits"
+    },
+    {
+      "id": "aircraft-performance",
+      "subjectId": "flight-performance-planning",
+      "name": "Aircraft Performance",
+      "description": "Takeoff, landing, and cruise performance"
+    },
+    {
+      "id": "aviation-physiology",
+      "subjectId": "human-performance",
+      "name": "Aviation Physiology",
+      "description": "Hypoxia, decompression, and spatial disorientation"
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "icao-annexes",
+      "text": "Which ICAO Annex covers Personnel Licensing?",
+      "options": [
+        {"text": "Annex 1", "isCorrect": true},
+        {"text": "Annex 2", "isCorrect": false},
+        {"text": "Annex 6", "isCorrect": false},
+        {"text": "Annex 8", "isCorrect": false}
+      ],
+      "explanation": "ICAO Annex 1 covers Personnel Licensing, including requirements for pilots, air traffic controllers, and aircraft maintenance engineers.",
+      "difficulty": 1
+    },
+    {
+      "topicId": "icao-annexes",
+      "text": "What does ICAO Annex 6 primarily address?",
+      "options": [
+        {"text": "Aircraft Operations", "isCorrect": true},
+        {"text": "Airworthiness", "isCorrect": false},
+        {"text": "Meteorological Services", "isCorrect": false},
+        {"text": "Facilitation", "isCorrect": false}
+      ],
+      "explanation": "ICAO Annex 6 addresses the Operation of Aircraft, covering commercial air transport, general aviation, and helicopter operations.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "rules-of-the-air",
+      "text": "What is the minimum visibility required for VFR flight in Class E airspace below 10,000 feet MSL?",
+      "options": [
+        {"text": "3 statute miles", "isCorrect": true},
+        {"text": "5 statute miles", "isCorrect": false},
+        {"text": "1 statute mile", "isCorrect": false},
+        {"text": "2 statute miles", "isCorrect": false}
+      ],
+      "explanation": "In Class E airspace below 10,000 feet MSL, VFR requires 3 statute miles visibility, along with cloud clearance of 500 feet below, 1,000 feet above, and 2,000 feet horizontal.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "rules-of-the-air",
+      "text": "When two aircraft are approaching head-on, what action should each pilot take?",
+      "options": [
+        {"text": "Both alter course to the right", "isCorrect": true},
+        {"text": "Both alter course to the left", "isCorrect": false},
+        {"text": "The faster aircraft maintains course", "isCorrect": false},
+        {"text": "The higher aircraft descends", "isCorrect": false}
+      ],
+      "explanation": "According to the Rules of the Air, when two aircraft are approaching head-on or approximately so, both shall alter their heading to the right to avoid collision.",
+      "difficulty": 1
+    },
+    {
+      "topicId": "aircraft-licensing",
+      "text": "What is the validity period of a Certificate of Airworthiness for a commercial transport aircraft?",
+      "options": [
+        {"text": "As specified by the State of Registry", "isCorrect": true},
+        {"text": "1 year", "isCorrect": false},
+        {"text": "2 years", "isCorrect": false},
+        {"text": "5 years", "isCorrect": false}
+      ],
+      "explanation": "The validity period of a Certificate of Airworthiness is determined by the State of Registry. It may be unlimited as long as the aircraft remains in an airworthy condition and maintenance requirements are met.",
+      "difficulty": 3
+    },
+    {
+      "topicId": "powerplant",
+      "text": "In a turbine engine, what is the primary function of the compressor section?",
+      "options": [
+        {"text": "Increase air pressure before combustion", "isCorrect": true},
+        {"text": "Mix fuel and air for combustion", "isCorrect": false},
+        {"text": "Extract energy from exhaust gases", "isCorrect": false},
+        {"text": "Cool the turbine section", "isCorrect": false}
+      ],
+      "explanation": "The compressor section increases the pressure of incoming air before it enters the combustion chamber. This compressed air is then mixed with fuel and ignited, producing high-energy exhaust gases.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "powerplant",
+      "text": "What happens to engine performance as altitude increases?",
+      "options": [
+        {"text": "Power output decreases due to reduced air density", "isCorrect": true},
+        {"text": "Power output increases due to cooler temperatures", "isCorrect": false},
+        {"text": "Power output remains constant", "isCorrect": false},
+        {"text": "Power output increases due to reduced drag", "isCorrect": false}
+      ],
+      "explanation": "As altitude increases, air density decreases, resulting in less air mass entering the engine. This leads to reduced power output in normally aspirated engines. Turbocharged engines can maintain power to a higher altitude.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "airframe-systems",
+      "text": "What is the purpose of winglets on modern aircraft?",
+      "options": [
+        {"text": "Reduce induced drag by minimizing wingtip vortices", "isCorrect": true},
+        {"text": "Increase wing area for greater lift", "isCorrect": false},
+        {"text": "Provide additional roll control", "isCorrect": false},
+        {"text": "House navigation lights", "isCorrect": false}
+      ],
+      "explanation": "Winglets reduce induced drag by disrupting the formation of wingtip vortices. This improves fuel efficiency and can increase range, especially beneficial during cruise flight.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "airframe-systems",
+      "text": "In a hydraulic system, what is the typical operating pressure range?",
+      "options": [
+        {"text": "3000 PSI", "isCorrect": true},
+        {"text": "100 PSI", "isCorrect": false},
+        {"text": "500 PSI", "isCorrect": false},
+        {"text": "10000 PSI", "isCorrect": false}
+      ],
+      "explanation": "Aircraft hydraulic systems typically operate at around 3000 PSI (pounds per square inch), providing sufficient force to operate flight controls, landing gear, and brakes while maintaining a reasonable system weight.",
+      "difficulty": 3
+    },
+    {
+      "topicId": "atmospheric-physics",
+      "text": "What is the standard temperature lapse rate in the troposphere?",
+      "options": [
+        {"text": "2°C per 1000 feet", "isCorrect": true},
+        {"text": "1°C per 1000 feet", "isCorrect": false},
+        {"text": "3°C per 1000 feet", "isCorrect": false},
+        {"text": "4°C per 1000 feet", "isCorrect": false}
+      ],
+      "explanation": "The International Standard Atmosphere (ISA) defines a temperature lapse rate of 2°C (or 1.98°C more precisely) per 1000 feet of altitude gain in the troposphere, up to the tropopause.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "atmospheric-physics",
+      "text": "At what altitude is the standard pressure 29.92 inches of mercury (1013.25 hPa)?",
+      "options": [
+        {"text": "Sea level", "isCorrect": true},
+        {"text": "5000 feet MSL", "isCorrect": false},
+        {"text": "10000 feet MSL", "isCorrect": false},
+        {"text": "18000 feet MSL", "isCorrect": false}
+      ],
+      "explanation": "Standard sea level pressure is defined as 29.92 inches of mercury (or 1013.25 hectopascals/millibars). This is the datum for the standard atmosphere and altimeter settings.",
+      "difficulty": 1
+    },
+    {
+      "topicId": "weather-phenomena",
+      "text": "What type of cloud is associated with thunderstorm development?",
+      "options": [
+        {"text": "Cumulonimbus", "isCorrect": true},
+        {"text": "Cumulus", "isCorrect": false},
+        {"text": "Stratus", "isCorrect": false},
+        {"text": "Cirrus", "isCorrect": false}
+      ],
+      "explanation": "Cumulonimbus (Cb) clouds are large, towering clouds associated with thunderstorms, heavy rain, lightning, hail, and severe turbulence. They can extend from low levels to above 50,000 feet.",
+      "difficulty": 1
+    },
+    {
+      "topicId": "weather-phenomena",
+      "text": "What weather phenomenon is characterized by a rotating column of air extending from a cumulonimbus cloud to the ground?",
+      "options": [
+        {"text": "Tornado", "isCorrect": true},
+        {"text": "Microburst", "isCorrect": false},
+        {"text": "Wind shear", "isCorrect": false},
+        {"text": "Gust front", "isCorrect": false}
+      ],
+      "explanation": "A tornado is a violently rotating column of air that extends from a thunderstorm (cumulonimbus cloud) to the ground. It is one of nature's most dangerous weather phenomena.",
+      "difficulty": 1
+    },
+    {
+      "topicId": "weather-phenomena",
+      "text": "What causes radiation fog?",
+      "options": [
+        {"text": "Ground cooling on clear, calm nights", "isCorrect": true},
+        {"text": "Warm air moving over cold water", "isCorrect": false},
+        {"text": "Frontal passage", "isCorrect": false},
+        {"text": "Mountain waves", "isCorrect": false}
+      ],
+      "explanation": "Radiation fog forms when the ground cools by radiating heat on clear, calm nights. The air near the surface cools to its dew point, causing water vapor to condense into fog. It typically dissipates after sunrise.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "mass-and-balance",
+      "text": "If the center of gravity (CG) is too far aft, what is the primary concern?",
+      "options": [
+        {"text": "Reduced longitudinal stability", "isCorrect": true},
+        {"text": "Increased stall speed", "isCorrect": false},
+        {"text": "Difficulty in recovering from a stall", "isCorrect": false},
+        {"text": "Nose-heavy tendency", "isCorrect": false}
+      ],
+      "explanation": "An aft CG reduces longitudinal (pitch) stability, making the aircraft less stable and more difficult to control. In extreme cases, it may be impossible to recover from unusual attitudes.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "mass-and-balance",
+      "text": "What is the effect of a forward CG on aircraft performance?",
+      "options": [
+        {"text": "Increased stall speed and greater stability", "isCorrect": true},
+        {"text": "Decreased stall speed and reduced stability", "isCorrect": false},
+        {"text": "No effect on stall speed", "isCorrect": false},
+        {"text": "Improved fuel efficiency", "isCorrect": false}
+      ],
+      "explanation": "A forward CG increases longitudinal stability but also increases stall speed because more tail-down force is required to maintain level flight, effectively increasing wing loading.",
+      "difficulty": 3
+    },
+    {
+      "topicId": "aircraft-performance",
+      "text": "What is the primary factor that determines the takeoff distance required?",
+      "options": [
+        {"text": "Aircraft weight and density altitude", "isCorrect": true},
+        {"text": "Wind direction only", "isCorrect": false},
+        {"text": "Runway slope only", "isCorrect": false},
+        {"text": "Outside air temperature only", "isCorrect": false}
+      ],
+      "explanation": "Takeoff distance is primarily affected by aircraft weight and density altitude (combination of pressure altitude and temperature). Higher weight and higher density altitude both increase takeoff distance significantly.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "aircraft-performance",
+      "text": "What is the best angle of climb speed (Vx) designed to achieve?",
+      "options": [
+        {"text": "Maximum altitude gain per horizontal distance", "isCorrect": true},
+        {"text": "Maximum altitude gain per unit time", "isCorrect": false},
+        {"text": "Minimum fuel consumption", "isCorrect": false},
+        {"text": "Maximum range", "isCorrect": false}
+      ],
+      "explanation": "Vx (best angle of climb speed) provides the maximum altitude gain for a given horizontal distance traveled. This is useful for clearing obstacles shortly after takeoff.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "aircraft-performance",
+      "text": "How does high density altitude affect aircraft performance?",
+      "options": [
+        {"text": "Decreases performance - reduced power, thrust, and lift", "isCorrect": true},
+        {"text": "Increases performance - improved power and lift", "isCorrect": false},
+        {"text": "No significant effect on performance", "isCorrect": false},
+        {"text": "Only affects jet engines, not piston engines", "isCorrect": false}
+      ],
+      "explanation": "High density altitude (hot, high, humid conditions) reduces air density, resulting in decreased engine power, propeller thrust, and wing lift. This increases takeoff distance and reduces rate of climb.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "aviation-physiology",
+      "text": "At what altitude do most people begin to experience symptoms of hypoxia without supplemental oxygen?",
+      "options": [
+        {"text": "10,000 - 12,000 feet", "isCorrect": true},
+        {"text": "5,000 feet", "isCorrect": false},
+        {"text": "18,000 feet", "isCorrect": false},
+        {"text": "25,000 feet", "isCorrect": false}
+      ],
+      "explanation": "Most people begin experiencing subtle symptoms of hypoxia (reduced oxygen to tissues) at 10,000-12,000 feet. Symptoms include decreased night vision, mild euphoria, and impaired judgment. Regulations require supplemental oxygen above certain altitudes.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "aviation-physiology",
+      "text": "What is spatial disorientation in aviation?",
+      "options": [
+        {"text": "Inability to correctly interpret aircraft attitude and position", "isCorrect": true},
+        {"text": "Loss of communication with ATC", "isCorrect": false},
+        {"text": "Failure of navigation equipment", "isCorrect": false},
+        {"text": "Confusion about flight route", "isCorrect": false}
+      ],
+      "explanation": "Spatial disorientation occurs when a pilot's sensory perception conflicts with actual aircraft attitude, motion, and position. This often happens in IMC when visual references are lost and vestibular illusions occur.",
+      "difficulty": 2
+    },
+    {
+      "topicId": "aviation-physiology",
+      "text": "What is the 'leans' in aviation medicine?",
+      "options": [
+        {"text": "A vestibular illusion causing false perception of bank angle", "isCorrect": true},
+        {"text": "A medical condition affecting blood pressure", "isCorrect": false},
+        {"text": "Muscle fatigue from long flights", "isCorrect": false},
+        {"text": "A nutritional deficiency", "isCorrect": false}
+      ],
+      "explanation": "The 'leans' is the most common form of spatial disorientation. It occurs when a pilot corrects a banked attitude that developed slowly and went unnoticed. After leveling the wings, the pilot feels like the aircraft is banked in the opposite direction.",
+      "difficulty": 3
+    },
+    {
+      "topicId": "rules-of-the-air",
+      "text": "Which aircraft has the right-of-way when two aircraft are converging at approximately the same altitude?",
+      "options": [
+        {"text": "The aircraft on the right", "isCorrect": true},
+        {"text": "The aircraft on the left", "isCorrect": false},
+        {"text": "The faster aircraft", "isCorrect": false},
+        {"text": "The higher aircraft", "isCorrect": false}
+      ],
+      "explanation": "When two aircraft are converging at approximately the same altitude (except head-on or nearly so), the aircraft that has the other on its right shall give way. This is the 'right-of-way to the right' rule.",
+      "difficulty": 1
+    },
+    {
+      "topicId": "powerplant",
+      "text": "What is detonation in a piston engine?",
+      "options": [
+        {"text": "Uncontrolled explosive burning of fuel-air mixture", "isCorrect": true},
+        {"text": "Normal combustion process", "isCorrect": false},
+        {"text": "Ignition of fuel before spark occurs", "isCorrect": false},
+        {"text": "Failure of magneto system", "isCorrect": false}
+      ],
+      "explanation": "Detonation is an uncontrolled, explosive ignition of the fuel-air mixture in the combustion chamber. It occurs after normal ignition and can cause severe engine damage. It is often caused by using fuel with too low an octane rating.",
+      "difficulty": 3
+    },
+    {
+      "topicId": "atmospheric-physics",
+      "text": "What happens to air density as temperature increases at a constant pressure?",
+      "options": [
+        {"text": "Air density decreases", "isCorrect": true},
+        {"text": "Air density increases", "isCorrect": false},
+        {"text": "Air density remains constant", "isCorrect": false},
+        {"text": "Air density becomes unstable", "isCorrect": false}
+      ],
+      "explanation": "According to the ideal gas law, at constant pressure, as temperature increases, air expands and becomes less dense. This is why hot days result in high density altitude and reduced aircraft performance.",
+      "difficulty": 2
+    }
+  ]
+}
